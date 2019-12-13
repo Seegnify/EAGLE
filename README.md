@@ -7,4 +7,4 @@ EAGLE is a NAS implementation that finds Neural Network architectures from scrac
 ## MNIST architecture search
 In this experiment EAGLE finds a network model that can classify MNIST handwritten characters. The diagram shows evolution of the model trained on a single CPU (not GPU) in a few days.
 
-![MNIST Training Progress](examples/mnist/images/training.png)
+![MNIST Training Progress](images/mnist.png)
