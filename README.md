@@ -1,5 +1,5 @@
 # EAGLE
-an *E*volutionary, *A*utomatic and *G*eneric *L*earning *E*nvironment.
+an Evolutionary, Automatic and Generic Learning Environment.
 
 ## About
 EAGLE is a NAS implementation that finds Neural Network architectures from scrach, without making any assumptions about their internal structure, only based on data.
