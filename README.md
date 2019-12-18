@@ -7,7 +7,7 @@ EAGLE is a NAS implementation that finds Neural Network architectures from scrac
 ## Features
 1. Uses Genetic Algorithms to evolve NN architectures
 2. Is distributed, runs on multiple cores and multiple machines
-3. Trains models with novel Local Reinforcement Learning method
+3. Trains models with the original and novel Local Reinforcement Learning method
 
 ## Local Reinforcement Learning
 
