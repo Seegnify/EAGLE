@@ -13,7 +13,7 @@ EAGLE is a NAS implementation that finds Neural Network architectures from scrac
 
 ![Local Reinforcement Learning](images/local-rl.png)
 
-Reinforcement learning is a type of machine learning where an agent such as neural network learns by interacting with an environment. The agent sends actions to the environment and the environment provides input and feedback to the agent. Correct agent actions are rewarded be the environment higher and incorrect actions are rewarded less. The agent learns to act correctly by correlating input, actions and rewards.
+Reinforcement learning is a type of machine learning where an agent such as neural network learns by interacting with an environment. The agent sends actions to the environment and the environment provides input and feedback to the agent. The correct agent actions are rewarded by the environment higher, and the incorrect actions are rewarded less. The agent learns to act correctly by correlating input, actions and rewards.
 
 In typical reinforcement learning configuration the environment reward is passed through network starting from output neurons down to hidden neurons via links between the neurons. The output neurons are updated directly from the environment reward and the hidden network are updated based on the feedback from the connected output neurons. In this case the environment feedback is only available to the output neurons.
 
