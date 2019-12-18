@@ -4,6 +4,24 @@ an Evolutionary, Automatic and Generic Learning Environment.
 ## About
 EAGLE is a NAS implementation that finds Neural Network architectures from scrach, without making any assumptions about their internal structure, only based on data.
 
+## Features
+1. Uses Genetic Algorithms to evolve NN architectures
+2. Is distributed, runs on multiple cores and multiple machines
+3. Trains models with Local Reinforcement Learning method
+
+## Local Reinforcement Learning
+
+Local Reinforcement Learning is a new training method invented by the EAGLE author.
+
+![Local Reinforcement Learning](images/local-rl.png)
+
+Reinforcement learning is a type of machine learning where an agent such as neural network learns by interacting with an environment. The agent sends actions to the environment and the environment provides input and feedback to the agent. Correct agent actions are rewarded be the environment higher and incorrect actions are rewarded less. The agent learns to act correctly by correlating input, actions and rewards.
+
+In typical reinforcement learning configuration the environment reward is passed through network starting from output neurons down to hidden neurons via links between the neurons. The output neurons are updated directly from the environment reward and the hidden network are updated based on the feedback from the connected output neurons. In this case the environment feedback is only available to the output neurons.
+
+In contrast to the traditional approach, Local Reinforcement Learning (LRL) updates all neurons locally by providing environment feedback directly to each neuron. Direct environment feedback allows each neuron to  learn independently without necessity to interact with other neurons. In LRL the neuron actions are binary and the actions are sampled based on neuron activation levels. The individual neurons are updated using the same RL methods as the entire network in the traditional approach. This effectively makes each LRL neuron behave as an individual mini-agent acting on the environment. The output neurons act directly on the environment and the hidden neurons act on the environment indirectly via connected neurons. The LRL components and interactions are shown on the diagram above.
+
+
 ## MNIST architecture search
 In this experiment EAGLE finds a network model that can classify MNIST handwritten digits. The diagram shows evolution of the model running on a single CPU (not GPU) over a period of a few days.
 
