@@ -51,8 +51,6 @@ cifar-10.cc
 list(APPEND DL_LIBS protobuf)
 
 # Link targets
-#target_link_libraries(xor ${DL_LIBS})
-#target_link_libraries(not ${DL_LIBS})
 target_link_libraries(mnist ${DL_LIBS})
 target_link_libraries(cifar-10 ${DL_LIBS})
 
