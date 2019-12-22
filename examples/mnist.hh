@@ -17,7 +17,7 @@ public:
     _objective = 1 - 1e-5;
     
     _data = mnist::read_dataset<std::vector, std::vector, uint8_t, uint8_t>
-    ("/home/greg/Projects/Github/mnist");
+    ("examples/mnist");
     
     std::cout << " training_images=" << _data.training_images.size()
               << " training_labels=" << _data.training_labels.size()
