@@ -2,7 +2,7 @@
 an **E**volutionary, **A**utomatic and **G**eneric **L**earning **E**nvironment.
 
 ## About
-EAGLE is a NAS implementation that finds Neural Network architectures from scrach, without making any assumptions about their internal structure, only based on data.
+EAGLE is a NAS implementation that finds Neural Network architectures from scrach, without making any assumptions about their internal structure, only based on data. The framework itself is also designed from scrach without a deep learning library like TensorFlow, and is implemente in C++.
 
 ## Features
 1. Uses Genetic Algorithms to evolve NN architectures
