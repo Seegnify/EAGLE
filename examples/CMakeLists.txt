@@ -1,7 +1,8 @@
 #
 # Copyright (c) 2019 Greg Padiasek
-# Distributed under the terms of the MIT License.
-# See accompanying file LICENSE or copy at http://opensource.org/licenses/MIT
+# Distributed under the terms of the the 3-Clause BSD License.
+# See the accompanying file LICENSE or the copy at 
+# https://opensource.org/licenses/BSD-3-Clause
 #
 
 #
@@ -51,6 +52,8 @@ cifar-10.cc
 list(APPEND DL_LIBS protobuf)
 
 # Link targets
+#target_link_libraries(xor ${DL_LIBS})
+#target_link_libraries(not ${DL_LIBS})
 target_link_libraries(mnist ${DL_LIBS})
 target_link_libraries(cifar-10 ${DL_LIBS})
 
