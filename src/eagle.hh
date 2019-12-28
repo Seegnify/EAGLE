@@ -69,7 +69,7 @@ public:
   // analog state derivative dS/dw w.r.t. i-th weight at time t
   virtual DTYPE dSdw(int i, int t = -1) const = 0;
 
-  // analog state derivative dS/dw w.r.t. bias at time t
+  // analog state derivative dS/db w.r.t. bias at time t
   virtual DTYPE dSdb(int t = -1) const = 0;
 
   // activation at at time t
