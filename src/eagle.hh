@@ -72,7 +72,7 @@ public:
   // analog state derivative dS/db w.r.t. bias at time t
   virtual DTYPE dSdb(int t = -1) const = 0;
 
-  // activation at at time t
+  // activation at time t
   virtual DTYPE A(int t = -1) const { return P(t) > _rng.uniform_dec(0, 1); }
     
   // reset state but keep the gradients
